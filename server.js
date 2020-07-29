@@ -29,6 +29,7 @@ var icecreams = [
 
   app.get(`/icecreams`, (req, res) => {
     // Loop over all the ice creams and display them all to the user
+    res.render("flavors", { icecreams })
 })
 
   app.listen(PORT, () => console.log(`🚀 on http://localhost:${PORT}`))
